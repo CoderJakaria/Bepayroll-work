@@ -1,16 +1,8 @@
-import { ThemeProvider } from '@material-ui/core'
-import React from 'react'
-import Navbar from '../components/LandingPage/Navbar/Navbar'
-import theme from '../Utility/Theme'
+import { Button, TextField } from "@material-ui/core";
+import React from "react";
 
-const LandingPage = () =>
-{
-  return (
-    <ThemeProvider theme={theme}>
-      <Navbar />
+const LandingPage = () => {
+  return <div></div>;
+};
 
-    </ThemeProvider>
-  )
-}
-
-export default LandingPage
+export default LandingPage;
