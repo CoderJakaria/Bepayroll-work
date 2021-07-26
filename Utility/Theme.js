@@ -1,22 +1,45 @@
-import { red } from '@material-ui/core/colors';
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from "@material-ui/core"; //createMuiTheme has been deprecated
 
-// A custom theme for this app
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
-      main: 'rgba(0, 0, 0, 1)',
+      main: "rgb(253, 197, 28)",
     },
     secondary: {
-      main: '#19857b',
+      main: "rgba(0,0, 0,1)",
     },
+    // success: {}, // maybe default are good
+    // warning: {},//maybe default are good
     error: {
-      main: red.A400,
+      main: "#ff3333",
     },
-    background: {
-      default: '#fff',
+  },
+
+  typography: {
+    fontFamily: "Poppins",
+    fontWeightLight: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 600,
+  },
+
+  shape: {
+    borderRadius: 4,
+  },
+
+  shadows: ["none"],
+
+  //   overrides: { // we can change when we neeed
+  //     MuiTextField: {
+  //       root: {
+
+  //       },
+  //     },
+  //   },
+
+  props: {
+    MuiButton: {
+      disableRipple: true,
+      color: "secondary",
     },
   },
 });
-
-export default theme;
