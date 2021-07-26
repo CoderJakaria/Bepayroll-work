@@ -1,10 +1,15 @@
+import { ThemeProvider } from '@material-ui/core'
 import React from 'react'
+import Navbar from '../components/LandingPage/Navbar/Navbar'
+import theme from '../Utility/Theme'
 
-const LandingPage = () => {
+const LandingPage = () =>
+{
   return (
-    <div>
-      
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+
+    </ThemeProvider>
   )
 }
 
