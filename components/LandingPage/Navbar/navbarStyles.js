@@ -7,16 +7,6 @@ const useStyles = makeStyles(theme => ({
   Logo: {
     // margin: theme.spacing(1)
   },
-  NavItems: {
-    display: "flex",
-    listStyle: "none",
-    justifyContent: "spaceBetween",
-    marginLeft: "auto",
-    marginRight: "20px",
-  },
-  NavItem: {
-    marginLeft: "60px",
-  },
 }));
 
 export default useStyles;

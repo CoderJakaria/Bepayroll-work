@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./navbar.module.css";
 
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar } from "@material-ui/core";
 
 import useStyles from "./navbarStyles";
 import logo from "../../../assets/payroll-logo.png";
@@ -22,21 +22,6 @@ const Navbar = () => {
               height="80"
             />
           </div>
-
-          {/* <Typography className={classes.NavItems} variant="ul" component="ul">
-          <Typography className={classes.NavItem} variant="li" component="li">
-            <a href="#features">Features</a>
-          </Typography>
-          <Typography className={classes.NavItem} variant="li" component="li">
-            <a href="#features">Pricing</a>
-          </Typography>
-          <Typography className={classes.NavItem} variant="li" component="li">
-            <a href="#features">Contact US</a>
-          </Typography>
-          <Typography className={classes.NavItem} variant="li" component="li">
-            <a href="#features">Login</a>
-          </Typography>
-        </Typography> */}
 
           <div className="col-md-6">
             <ul className={` ${styles.navItems}`}>

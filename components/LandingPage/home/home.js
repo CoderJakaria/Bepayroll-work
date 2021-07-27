@@ -2,7 +2,7 @@ import styles from "./home.module.css";
 import Image from "next/image";
 
 import { Button } from "@material-ui/core";
-import Hero from "../../assets/hero-vector.png";
+import Hero from "../../../assets/hero-vector.png";
 
 const Features = () => {
   return (

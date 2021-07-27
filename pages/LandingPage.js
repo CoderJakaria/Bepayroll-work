@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/LandingPage/Navbar/Navbar";
-import Home from "../components/home/home";
+import Home from "../components/LandingPage/home/home";
 
 const LandingPage = () => {
   return (
