@@ -1,12 +1,12 @@
 import React from "react";
+import Hero from "../components/LandingPage/hero/Hero";
 import Navbar from "../components/LandingPage/Navbar/Navbar";
-import Home from "../components/LandingPage/home/home";
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <Home />
+      <Hero />
     </div>
   );
 };
