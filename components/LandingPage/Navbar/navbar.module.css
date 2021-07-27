@@ -1,0 +1,33 @@
+.navItems {
+  list-style: none;
+  margin-left: -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navItems li {
+  margin-top: 10px;
+}
+
+.navItems a {
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.3s;
+  padding: 15px;
+  /* padding-left: 0; */
+  font-weight: 500;
+}
+
+.navItems a:hover {
+  background: white;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+@media (max-width: 764px) {
+  .navLogo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}

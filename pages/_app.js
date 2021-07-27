@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "@material-ui/core";
 import { theme } from "../Utility/theme";
 

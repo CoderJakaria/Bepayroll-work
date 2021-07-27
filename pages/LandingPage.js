@@ -1,12 +1,12 @@
-import { Button, TextField } from "@material-ui/core";
 import React from "react";
 import Navbar from "../components/LandingPage/Navbar/Navbar";
+import Home from "../components/home/home";
 
-const LandingPage = () =>
-{
+const LandingPage = () => {
   return (
     <div>
       <Navbar />
+      <Home />
     </div>
   );
 };
