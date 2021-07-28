@@ -1,13 +1,30 @@
+import { useEffect, useState } from "react";
+
 import Image from "next/image";
 import styles from "./navbar.module.css";
-
-import { AppBar } from "@material-ui/core";
-
 import logo from "../../../assets/payroll-logo.png";
 
 const Navbar = () => {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
+    });
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
+  }, []);
+
   return (
-    <AppBar position="static" color="secondary">
+    <div
+      className={`navBar ${show && "navBar_active"}`}
+      style={{ background: "black", transition: "0.5s" }}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className={`col-md-6 ${styles.navLogo}`}>
@@ -32,7 +49,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </AppBar>
+    </div>
   );
 };
 

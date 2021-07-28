@@ -1,0 +1,11 @@
+.features > h1 {
+  font-size: xx-large;
+  background-color: #f39223;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.features_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}

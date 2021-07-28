@@ -1,0 +1,54 @@
+.packagePlansItem {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+  min-height: 90%;
+}
+
+.packagePlansItem > h2 {
+  font-weight: 600;
+  font-size: x-large;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.packagePlansItem > h3 {
+  font-weight: 500;
+  font-size: xx-large;
+  margin: 10px 0;
+}
+
+.packagePlansItem > span {
+  font-style: italic;
+  color: rgb(141, 141, 141);
+  margin: 10px 0;
+}
+
+.packagePlansItem > p {
+  margin: 0;
+  line-height: 19px;
+  font-size: 15px;
+  color: black;
+}
+
+.packagePlansItem > a {
+  background: black;
+  padding: 10px 40px;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.packagePlansItem_packageImage {
+  height: 400px;
+  width: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+}

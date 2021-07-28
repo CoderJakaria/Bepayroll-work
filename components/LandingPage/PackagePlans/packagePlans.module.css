@@ -1,0 +1,15 @@
+.packagePlane h1 {
+  font-size: xx-large;
+  background-color: #f39223;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.packagePlans_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* column-gap: 30px; */
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 55px;
+}

@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: Poppins !important;
   background: #fdc822 !important;
 }
@@ -15,4 +16,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.navBar_active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
 }

@@ -1,0 +1,35 @@
+.featuresItem {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  margin: 60px 75px;
+  padding: 20px;
+  /* margin: 60px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.features_text {
+  text-align: justify;
+  min-height: 335px;
+  padding: 0 20px;
+}
+
+.features_text > h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.features_text > p {
+  line-height: 19px;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.featureIcon {
+  font-size: 570% !important;
+  margin: 20px auto;
+  color: #f39223;
+}
