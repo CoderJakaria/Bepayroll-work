@@ -24,10 +24,80 @@
   border-radius: 5px;
 }
 
+.navbar_burgerIcon {
+  display: none !important;
+}
+
 @media (max-width: 764px) {
   .navLogo {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    width: 100%;
+  }
+  .navItems {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navLogo {
+    justify-content: flex-start;
+  }
+  .navBar img {
+    width: 80px;
+  }
+
+  .navItems {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: black;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+    left: 0;
+    height: fit-content;
+    padding: 10px 10px 20px 10px;
+    transform: scaleY(0);
+    transition: 0.5s;
+    transform-origin: top;
+  }
+  .active_NavItems {
+    transform: scaleY(1);
+  }
+
+  .navItems a {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    transition: 1s;
+  }
+
+  .navItems a:hover {
+    transition: 0s;
+    border-radius: 0;
+  }
+
+  .navItems li {
+    margin-bottom: 25px;
+    margin-bottom: 35px;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar_burgerIcon {
+    display: block !important;
+    color: white !important;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

@@ -102,3 +102,22 @@
     padding-bottom: 100px;
   }
 }
+
+@media (max-width: 500px) {
+  .hero_heading p {
+    font-size: 25px;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+
+  .hero_sub_heading p {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero_vector {
+    display: none;
+  }
+}

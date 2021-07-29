@@ -2,7 +2,7 @@ import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <div id="contact" className={`container ${styles.contact}`}>
+    <div id="contact" className={`${styles.contact}`}>
       <p>
         Hey, the system is still under construction, if you are interested in
         the system please fill in the form below or contact us using the number

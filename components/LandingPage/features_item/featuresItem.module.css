@@ -33,3 +33,17 @@
   margin: 20px auto;
   color: #f39223;
 }
+
+@media (max-width: 1023px) {
+  .featuresItem {
+    margin: 30px 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .featuresItem {
+    margin: 30px auto;
+    width: 90%;
+  }
+}

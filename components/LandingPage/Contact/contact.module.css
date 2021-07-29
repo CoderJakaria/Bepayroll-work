@@ -2,14 +2,15 @@
   background-color: rgba(255, 255, 255, 1);
   border-radius: 10px;
   padding: 20px;
-  margin: 60px 100px;
+  margin: 60px auto;
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 20px;
 }
 
 .contact > p {
-  grid-column: span 3;
+  grid-column: span 4;
   margin-bottom: 20px;
   font-style: italic;
   background-color: rgb(253, 197, 28);
@@ -69,7 +70,7 @@
   background: gray;
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   .contact {
     margin: 0;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -83,5 +84,76 @@
   .contact form {
     grid-column: span 3;
     margin-bottom: 20px;
+  }
+} */
+
+/* responsive on big screen  */
+@media (max-width: 2000px) {
+  .contact > p {
+    grid-column: span 4;
+  }
+
+  .contact > form {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1220px) {
+  .contact > form {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 793px) {
+  .contact {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  .contact_info > p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 758px) {
+  .contact {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .contact h2 {
+    font-size: 23px;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 225px;
+  }
+}
+
+@media (max-width: 587px) {
+  .contact h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .contact form {
+    grid-column: span 4;
+    margin-bottom: 20px;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 180px;
+  }
+
+  .contact h2 {
+    font-size: 18px;
   }
 }

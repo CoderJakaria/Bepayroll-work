@@ -52,3 +52,33 @@
   display: inline-block;
   background-size: cover;
 }
+
+/* responsive  */
+@media (max-width: 490px) {
+  .packagePlansItem {
+    margin: 60px 0 auto 0;
+    min-height: 10%;
+  }
+
+  .packagePlansItem_packageImage {
+    height: 340px;
+    width: 270px;
+  }
+
+  .packagePlansItem > h3 {
+    font-size: 25px;
+  }
+  .packagePlansItem > p {
+    font-size: 13px;
+  }
+  .packagePlansItem > a {
+    padding: 7px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .packagePlansItem_packageImage {
+    height: 320px;
+    width: 220px;
+  }
+}

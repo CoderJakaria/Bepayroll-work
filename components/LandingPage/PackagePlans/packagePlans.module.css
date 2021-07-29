@@ -8,8 +8,32 @@
 .packagePlans_items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  /* column-gap: 30px; */
   align-items: center;
   margin: 20px 0;
   padding: 0 55px;
 }
+
+@media (max-width: 520px) {
+  .packagePlans_items {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .packagePlans_items {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .packagePlans_items {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .packagePlans_items {
+    padding: 10px;
+  }
+}
+
+/* @media (max-width: 335) */
